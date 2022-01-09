@@ -8,7 +8,8 @@ html {
   box-sizing: inherit;
 }
 
-ulб ol {
+ul,
+ol {
   padding: 0;
 }
 
@@ -48,7 +49,13 @@ select {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -56,4 +63,25 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
